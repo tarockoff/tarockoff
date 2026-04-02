@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Tarockoff — Special Projects</title>
+  <meta name="description" content="A simple public website for Daniel Tarockoff's special projects, ideas, and experiments." />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Daniel Tarockoff — Special Projects" />
+  <meta property="og:description" content="A simple public website for special projects, ideas, and experiments." />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      --bg: #0b0d10;
+      --card: #13171c;
+      --text: #f5f7fa;
+      --muted: #b8c0cc;
+      --line: #252c35;
+      --accent: #8ec5ff;
+      --accent-2: #c4f0d4;
+      --max: 860px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: linear-gradient(180deg, #0b0d10 0%, #10151b 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .wrap {
+      width: min(calc(100% - 32px), var(--max));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 72px 0 36px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      color: var(--accent-2);
+      font-size: 0.9rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 6vw, 4.8rem);
+      line-height: 0.98;
+      letter-spacing: -0.04em;
+    }
+
+    .intro {
+      margin-top: 20px;
+      max-width: 700px;
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    .nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .nav a {
+      padding: 10px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--text);
+    }
+
+    main {
+      padding: 36px 0 72px;
+    }
+
+    section {
+      margin-top: 22px;
+      padding: 28px;
+      background: rgba(19, 23, 28, 0.8);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 1.4rem;
+      letter-spacing: -0.02em;
+    }
+
+    p {
+      margin: 10px 0 0;
+    }
+
+    .project {
+      padding-top: 18px;
+      margin-top: 18px;
+      border-top: 1px solid var(--line);
+    }
+
+    .project:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: 0;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: #1b2330;
+      color: #c9def8;
+      font-size: 0.85rem;
+    }
+
+    footer {
+      padding: 24px 0 60px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .small {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="eyebrow">Special Projects</div>
+      <h1>Daniel Tarockoff</h1>
+      <p class="intro">
+        A public home for projects, experiments, and ideas I'm building across technology, culture, consciousness, and creative work.
+      </p>
+      <nav class="nav" aria-label="Primary">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section id="projects">
+        <h2>Current Projects</h2>
+
+        <div class="project">
+          <h3>Project One</h3>
+          <p>A short description of a special project you're working on. Keep it simple: what it is, why it matters, and what stage it's in.</p>
+          <div class="tag">In Progress</div>
+        </div>
+
+        <div class="project">
+          <h3>Project Two</h3>
+          <p>A second project can live here. This page is intentionally lightweight so you can publish fast and update it later.</p>
+          <div class="tag">Exploration</div>
+        </div>
+
+        <div class="project">
+          <h3>Project Three</h3>
+          <p>Add links here later to writeups, decks, essays, prototypes, or anything else you want people to discover.</p>
+          <div class="tag">Coming Soon</div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>About</h2>
+        <p>
+          I'm interested in building thoughtful, ambitious things at the intersection of human potential, technology, and culture.
+        </p>
+        <p class="small">
+          This site will evolve over time. For now, it's a simple index of what I'm working on.
+        </p>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>
+          Reach me at <a href="mailto:hello@example.com">hello@example.com</a>.
+        </p>
+        <p class="small">
+          You can swap this for your real email, LinkedIn, X, or another public contact point.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      © <span id="year"></span> Daniel Tarockoff
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
